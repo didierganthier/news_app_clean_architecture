@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:news_app_clean_architecture/injection_container.dart';
 
-void main() {
+void main() async {
+  await initializeDependencies();
   runApp(const MyApp());
 }
 
